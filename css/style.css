@@ -12,7 +12,8 @@
 }
 
 body {
-    font-family: "Lato", sans-serif
+    font-family: "Lato", sans-serif;
+    overflow-x: hidden;
 }
 
 /* header */
@@ -21,6 +22,9 @@ body {
     color: #fff;
     padding-left: 40px;
     height: 70px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
 }
 
 .header .flex {
@@ -52,8 +56,9 @@ li a:hover {
 .deploy {
     background-color: var(--primary-color);
     color: #fff;
-    height: 400px;
+    height: 500px;
     position: relative;
+    padding-top: 30px;
 }
 
 .deploy-text {
@@ -78,7 +83,7 @@ li a:hover {
     width: 25rem;
     position: relative;
     top: 60px;
-    z-index: 100;
+    z-index: 1;
     animation: slideInRight 1s ease-in;
 }
 
@@ -459,6 +464,7 @@ li a:hover {
 @media (max-width: 500px) {
     .header {
         height: 160px;
+        width: auto;
     }
 
     .header .flex {
